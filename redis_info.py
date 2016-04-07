@@ -180,6 +180,7 @@ def dispatch_value(info, key, type, plugin_instance=None, type_instance=None):
     val.type_instance = type_instance
     val.plugin_instance = plugin_instance
     val.values = [value]
+    val.meta={'0': True}
     val.dispatch()
 
 def read_callback():
